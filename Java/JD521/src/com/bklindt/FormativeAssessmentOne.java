@@ -22,11 +22,14 @@ public class FormativeAssessmentOne {
         // Removes all white spaces and stores the string in a new variable
         String nameSurname = name.replace(" ", "");
 
+        // Stores the length into a new int variable
         System.out.println(nameSurname);
         int sizeOfFullName = nameSurname.length();
 
+        // Create an array the size of the int above
         int[] arrayDragon = new int[sizeOfFullName];
 
+        // Loops through each item in the array and adds a random value between 10 and 50
         Random random = new Random();
         int x = 0;
         while (x != (sizeOfFullName)) {
@@ -35,6 +38,7 @@ public class FormativeAssessmentOne {
             x++;
         }
 
+        // Prints array items
         System.out.println(Arrays.toString(arrayDragon));
         Arrays.sort(arrayDragon);
         System.out.println(Arrays.toString(arrayDragon));
