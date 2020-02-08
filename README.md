@@ -2,7 +2,9 @@
 
 - [GitHub pages link](https://brandon-klindt.github.io/CTU-Projects/)
 
-## Java ![Java](https://img.shields.io/badge/JD521-Java-orange?style=for-the-badge&logo=java)
+***
+
+ ![Java](https://img.shields.io/badge/JD521-Java-orange?style=for-the-badge&logo=java)
 
 | JD521 | Source Code                                                  |
 | ----- | ------------------------------------------------------------ |
