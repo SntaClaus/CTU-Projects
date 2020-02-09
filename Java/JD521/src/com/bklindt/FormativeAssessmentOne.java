@@ -38,7 +38,7 @@ public class FormativeAssessmentOne {
             x++;
         }
 
-        // Prints array items
+        // Prints array items to console
         System.out.println(Arrays.toString(arrayDragon));
         Arrays.sort(arrayDragon);
         System.out.println(Arrays.toString(arrayDragon));
