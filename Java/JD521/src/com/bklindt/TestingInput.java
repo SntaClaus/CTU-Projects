@@ -1,5 +1,7 @@
 package com.bklindt;
 
+import java.util.Arrays;
+import java.util.Random;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
@@ -7,28 +9,36 @@ public class TestingInput {
 
     public static void main(String[] args){
 
-        int firstNum, secondNum, total;
+        int count;
         String name;
 
         System.out.println("Please follow all instructions carefully.");
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.print("Please enter your name: ");
-        name = input.nextLine();
+        name = scanner.nextLine();
+        count = name.length();
 
-        System.out.println("Welcome " + name + "! You will now enter two numbers.");
-        System.out.print("First number: ");
-        firstNum = input.nextInt();
+        // Create an array the size of the int above
+        int[] arrayDragon = new int[count];
 
-        System.out.print("Second number: ");
-        secondNum = input.nextInt();
+        // Loops through each item in the array and adds a random value between 10 and 50
+        Random random = new Random();
+        for (int i = 0 ; i < count ; i++){
+            int randomInt = random.nextInt(40);
+            arrayDragon[i] = randomInt + 10;
+        }
 
-        total = firstNum + secondNum;
+        System.out.println(Arrays.toString(arrayDragon));
 
-        System.out.println("The sum of the numbers = " + total);
+        int numberChoice;
+        System.out.print("Choose a number: ");
+        numberChoice = scanner.nextInt();
 
-        // Make it pop up with a dialog box - optional
-        //JOptionPane.showMessageDialog(null, "The sum of the numbers = " + total);
+        for (int i : arrayDragon) {
+            System.out.println(i);
+        }
+
 
     }
 }
